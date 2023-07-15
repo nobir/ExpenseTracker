@@ -4,7 +4,6 @@ import re
 def add_expense(expense_data, categories):
     print("Enter expense details:")
 
-
     while True:
         date = input("Date (YYYY-MM-DD): ")
 
@@ -15,7 +14,6 @@ def add_expense(expense_data, categories):
             continue
         else:
             break
-
 
     while True:
         category = input("Enter the new category: ")
@@ -33,7 +31,6 @@ def add_expense(expense_data, categories):
             categories.append(category)
             break
 
-
     while True:
         description = input("Description: ")
 
@@ -46,7 +43,6 @@ def add_expense(expense_data, categories):
             continue
         else:
             break
-
 
     while True:
         amount = input("Amount: ")

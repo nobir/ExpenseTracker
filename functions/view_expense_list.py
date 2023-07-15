@@ -6,4 +6,3 @@ def view_expense_list(expense_data):
     for expense in expense_data:
         print(
             f"{expense['ID']}   {expense['Date']}  {expense['Category']:13} {expense['Description']:15} {expense['Amount']}")
-
