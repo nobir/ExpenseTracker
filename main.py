@@ -23,7 +23,13 @@ def main():
         print("6. Export Expense Data")
         print("7. Add categories")
         print("8. Exit")
-        choice = int(input("Enter your choice (1-8): "))
+        choice = input("Enter your choice (1-8): ")
+
+        if not str.isdigit(choice):
+            print("Invalid choice.")
+            continue
+        else:
+            choice = int(choice)
 
         if choice == 1:
             add_expense(expense_data, categories)
@@ -44,6 +50,7 @@ def main():
             break
         else:
             print("Invalid choice.")
+            continue
 
 
 if __name__ == "__main__":
